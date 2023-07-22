@@ -7,6 +7,11 @@
     background: url(../images/404image.jpg) no-repeat center;
     background-size: cover;
     height: 300px;
+    width: auto;
+}
+
+.error_footer {
+    background-color: darkred;
 }
 
 /*-----Index Header*/
@@ -42,6 +47,41 @@
 }
 
 /*-----404 Main Content*/
-
+.error_main p {
+    text-align: center;
+}
 
 /*-----404 Footer*/
+.error_footer {
+    height: 60px;
+}
+
+/*-----Media Queries*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .error_main {
+        height: 400px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .error_main {
+        height: 500px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .error_main {
+        height: 600px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .error_main {
+        height: 650px;
+    }
+}
