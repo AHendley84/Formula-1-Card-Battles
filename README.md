@@ -11,6 +11,7 @@ For my second project I am creating a Top Trumps style game using the 2023 Formu
 ### Color Scheme
 
 ### Typography
+Google Fonts was used to import the 'Russo One' and the 'Exo 2' fonts into the style.css file.
 
 ### Wireframes
 
