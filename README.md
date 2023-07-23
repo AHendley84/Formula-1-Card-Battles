@@ -29,9 +29,9 @@ Google Fonts was used to import the 'Russo One' and the 'Exo 2' fonts into the s
 
 ### Frameworks, Libraries and Programs Used
 - [Balsamiq](https://balsamiq.com/) was used for pre-visualisation of the pages.
-- [Google Fonts](https://fonts.google.com/) was used to import the the 'Poppins' and 'Sintony' fonts into the style.css file.
-- [Font Awesome](https://fontawesome.com/) was utilised for icons used on the site, including the socila media icons.
-- [Bootstrap]() was used for responsive grids, table and elements of the contact form
+- [Google Fonts](https://fonts.google.com/) was used to import the the 'Russo One' and 'Exo 2' fonts into the style.css file.
+- [Font Awesome](https://fontawesome.com/) was utilised for icons used on the site for the social media icons.
+- [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) was used for responsive grids, table and button elements.
 - [Git](https://git-scm.com/) was used for version control. I utilised the CLI terminal in GitPod & codeanywhere to commit and push to GitHub.
 - [GitPod](https://gitpod.io) was used as the cloud based enviroment based on VS Code to develop the site.
 - [codeanywhere](https://www.codeanywhere.com) was also used as the cloud based enviroment based on VS Code to develop the site.
