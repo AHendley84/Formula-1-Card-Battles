@@ -73,3 +73,4 @@ HTML Markup Validator results:
 - Driver and Team Logo images courtsey of skysports.com.
 - Driver stats and information courtsey of Formula1.com.
 - Image used in 404.html courtesy of [CNN.com](https://edition.cnn.com/2018/08/30/motorsport/formula-one-crashes-defined-sport-halo-spt-intl/index.html).
+- Thanks to [Stack Overflow](https://stackoverflow.com/questions/4919076/outline-effect-to-text) for help on applying the text-shadow to the text on the 404 page.

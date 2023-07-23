@@ -11,22 +11,58 @@
 <body>
     <!-- Game Header -->
     <header>
-        <div>
-
+        <div class="container-fluid no-gutters game_header">
+            <div class="scorecard">
+                <h4>Player 1 Cards</h4><h4>Computer Cards</h4>
+            </div>
         </div>
     </header>
 
     <!-- Game Main Content -->
     <main>
-        <div>
+        <div class="play_area">
+            
+            <h2>Player 1 Active Card</h2>
+                <div class="player_current_card">
+                    <div class="row no-gutters">
+                        <div class="col">
+                          <img src="assets/images/drivers/norris.png" class="driver_image" alt="...">
+                          <br>
+                          <img src="assets/images/team_logos/mclaren.jpg" class="team_image" alt="...">
+                        </div>
+                        <div class="col">
+                            <h3 id="driver_name">Lando Norris</h3>
+                            <h4 id="team_name">McLaren</h4>
+                        </div>
+                    </div>
+                </div>
+              <h2>Computer Active Card</h2>
+              <div class="computer_current_card">
 
+              </div>
         </div>
     </main>
 
     <!-- Game Footer -->
-    <footer>
+    <footer class="container-fluid no-gutters f1_footer">
         <div>
-
+            <ul class="list-inline social_media_links">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/andrew.hendley.9" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/hendubz84/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/andrew-hendley-28baa3202/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>

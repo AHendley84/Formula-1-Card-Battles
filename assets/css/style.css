@@ -2,41 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap');
 
 /*-----Background Colors / Images*/
+.f1_footer {
+    background-color: darkred;
+}
 
 .error_main {
     background: url(../images/404image.jpg) no-repeat center;
     background-size: cover;
     height: 300px;
     width: auto;
+    
 }
 
-.error_footer {
-    background-color: darkred;
-}
+/*-----Header*/
 
-/*-----Index Header*/
-
-
-/*-----Index Main Content*/
-
-
-/*-----Index Footer*/
-
-
-/*-----Game Header*/
-
-
-/*-----Game Main Content*/
-
-
-/*-----Game Footer*/
-
-
-/*-----404 Header*/
-.error_header {
+.f1_header {
     min-height: 100px;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 10px;
+}
+
+.f1_header h1 {
+    font-family: "Russo One", sans-serif;
+    font-style: italic bold;
+    font-size: 2rem;
+    color: darkred;
+}
+
+.game_header {
+    min-height: 75px;
+    padding-top: 10px;
 }
 
 .error_header h1 {
@@ -46,14 +40,132 @@
     color: darkred;
 }
 
-/*-----404 Main Content*/
-.error_main p {
+/*-----Index Main Content*/
+
+.index_content {
+    width: auto;
+    min-height: 300px;
+    margin: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    border: solid 2px lightgray;
+    border-radius: 15px;
+}
+
+#play_game {
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome_message h2 {
+    font-family: "Exo 2", sans-serif;
+    color: darkgray;
+}
+
+.welcome_message p {
+    font-family: "Exo 2", sans-serif;
+}
+
+/*-----Game Main Content*/
+.scorecard {
     text-align: center;
 }
 
-/*-----404 Footer*/
-.error_footer {
+.play_area {
+    padding-bottom: 20px;
+}
+
+.play_area h2 {
+    text-align: center;
+}
+.player_current_card {
+    display: block;
+    margin: 0 auto;
+    background: url(../images/carbon.jpg) no-repeat center;
+    background-size: cover;
+    max-width: 350px;
+    min-height: 300px;
+    border: solid 2px lightgray;
+    border-radius: 15px;
+}
+
+.computer_current_card {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: url(../images/carbon.jpg) no-repeat center;
+    background-size: cover;
+    max-width: 350px;
+    min-height: 300px;
+    border: solid 2px lightgray;
+    border-radius: 15px;
+}
+
+.driver_image {
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 130px;
+    width: 130px;
+}
+
+.team_image {
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 128px;
+    height: 96px;
+}
+
+#driver_name {
+    padding-top: 10px;
+    font-family: "Russo One", sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+#team_name {
+    padding-top: 10px;
+    font-family: "Russo One", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+/*-----404 Main Content*/
+.error_content {
+    position: absolute;
+    top: 35%;
+}
+.error_content h2 {
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+#back_to_game {
+    display: block;
+    margin: 0 auto;
+}
+
+/*-----Footer*/
+.f1_footer {
     height: 60px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.social_media_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
 }
 
 /*-----Media Queries*/
@@ -61,27 +173,75 @@
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .error_main {
-        height: 400px;
+        height: 500px;
+    }
+
+    .player_current_card {
+        max-width: 500px;
+        min-height: 400px;
+    }
+
+    .computer_current_card {
+        max-width: 500px;
+        min-height: 400px;
     }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     .error_main {
-        height: 500px;
+        height: 600px;
+    }
+
+    .f1_header h1 {
+        font-size: 3rem;
+    }
+
+    .index_content {
+        margin-top: 50px;
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-bottom: 50px;
     }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     .error_main {
-        height: 600px;
+        height: 700px;
+    }
+
+    .f1_header h1 {
+        font-size: 4rem;
+    }
+
+    .index_content {
+        margin-top: 75px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 75px;
     }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .error_main {
-        height: 650px;
+        height: 800px;
+    }
+
+    .error_content {
+        position: absolute;
+        top: 45%;
+    }
+
+    .f1_header h1 {
+        font-size: 5rem;
+    }
+
+    .index_content {
+        margin-top: 75px;
+        margin-left: 125px;
+        margin-right: 125px;
+        margin-bottom: 75px;
     }
 }
