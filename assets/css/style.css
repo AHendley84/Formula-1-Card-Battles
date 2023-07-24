@@ -79,12 +79,18 @@
 .play_area h2 {
     text-align: center;
 }
+
+.image_column {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
 .player_current_card {
     display: block;
     margin: 0 auto;
     background: url(../images/carbon.jpg) no-repeat center;
     background-size: cover;
-    max-width: 350px;
+    max-width: 500px;
     min-height: 300px;
     border: solid 2px lightgray;
     border-radius: 15px;
@@ -92,11 +98,10 @@
 
 .computer_current_card {
     display: block;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 0 auto;
     background: url(../images/carbon.jpg) no-repeat center;
     background-size: cover;
-    max-width: 350px;
+    max-width: 500px;
     min-height: 300px;
     border: solid 2px lightgray;
     border-radius: 15px;
@@ -104,36 +109,45 @@
 
 .driver_image {
     display: block;
-    padding-top: 10px;
-    padding-left: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
     height: 130px;
     width: 130px;
 }
 
 .team_image {
     display: block;
-    padding-top: 10px;
-    padding-left: 10px;
+    margin: 0 auto;
     width: 128px;
     height: 96px;
 }
 
-#driver_name {
-    padding-top: 10px;
+.driver_info_column h3, h4 {
     font-family: "Russo One", sans-serif;
-    font-size: 25px;
-    font-style: italic;
-    font-weight: bold;
     color: white;
 }
-#team_name {
+
+.driver_info_column span {
+    display: inline-flex;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    font-size: 12px;
+}
+
+#driver_name {
     padding-top: 10px;
-    font-family: "Russo One", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#team_name {
+    padding-top: 5px;
     font-size: 15px;
     font-style: italic;
     font-weight: bold;
-    color: white;
 }
+
 
 /*-----404 Main Content*/
 .error_content {
@@ -184,6 +198,36 @@
     .computer_current_card {
         max-width: 500px;
         min-height: 400px;
+    }
+
+    .image_column {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .driver_image {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 150px;
+        width: 150px;
+    }
+    
+    .team_image {
+        display: block;
+        margin: 0 auto;
+        width: 151px;
+        height: 113px;
+    }
+
+    #driver_name {
+        padding-top: 10px;
+        font-size: 28px;
+    }
+
+    #team_name {
+        padding-top: 10px;
+        font-size: 20px;
     }
 }
 
