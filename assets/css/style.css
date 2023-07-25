@@ -67,6 +67,10 @@
     font-family: "Exo 2", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*-----Game Main Content*/
 .scorecard {
     text-align: center;
@@ -78,6 +82,8 @@
 
 .play_area h2 {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .image_column {
@@ -122,16 +128,15 @@
     height: 96px;
 }
 
+.scorecard h4 {
+    padding-top: 5px;
+    font-family: "Russo One", sans-serif;
+    color: black;
+}
+
 .driver_info_column h3, h4 {
     font-family: "Russo One", sans-serif;
     color: white;
-}
-
-.driver_info_column span {
-    display: inline-flex;
-    font-family: "Exo 2", sans-serif;
-    color: white;
-    font-size: 12px;
 }
 
 #driver_name {
@@ -146,6 +151,16 @@
     font-size: 15px;
     font-style: italic;
     font-weight: bold;
+}
+
+td {
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.driver_info_column {
+    margin-right: 10px;
 }
 
 
@@ -228,6 +243,15 @@
     #team_name {
         padding-top: 10px;
         font-size: 20px;
+    }
+
+    table {
+        margin-top: 40px;
+    }
+
+    td {
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 }
 

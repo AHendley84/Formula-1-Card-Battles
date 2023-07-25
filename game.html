@@ -13,7 +13,8 @@
     <header>
         <div class="container-fluid no-gutters game_header">
             <div class="scorecard">
-                <h4>Player 1 Cards</h4><h4>Computer Cards</h4>
+                <h4>Player 1 Cards</h4>
+                <h4>Computer Cards</h4>
             </div>
         </div>
     </header>
@@ -33,12 +34,30 @@
                         <div class="col driver_info_column">
                             <h3 id="driver_name">Driver Name</h3>
                             <h4 id="team_name">Team Name</h4>
-                                <span>
-                                    <h5>Nationality: </h5> <h5  id="player_nationality_value"> Country</h5>
-                                </span>
-                                <span>
-                                    <h5>Car Number: </h5> <h5 id="player_car_value"> [ 1 ]</h5>
-                                </span>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Races Entered:</td>
+                                            <td id="player_gp_value">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Career Points:</td>
+                                            <td id="player_points_value">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Career Podiums:</td>
+                                            <td id="player_podiums_value">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Race Wins:</td>
+                                            <td id="player_wins_value">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Drivers Championships:</td>
+                                            <td id="player_champs_value">#</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             <hr>                           
                         </div>
                     </div>
@@ -54,6 +73,30 @@
                         <div class="col driver_info_column">
                             <h3 id="driver_name">Driver Name</h3>
                             <h4 id="team_name">Team Name</h4>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Races Entered:</td>
+                                        <td id="computer_gp_value">?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Career Points:</td>
+                                        <td id="computer_points_value">?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Career Podiums:</td>
+                                        <td id="computer_podiums_value">?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Race Wins:</td>
+                                        <td id="computer_wins_value">?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drivers Championships:</td>
+                                        <td id="computer_champs_value">?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
               </div>
