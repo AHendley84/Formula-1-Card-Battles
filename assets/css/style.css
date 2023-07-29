@@ -72,6 +72,16 @@ a {
 }
 
 /*-----Game Main Content*/
+.message_box {
+    text-align: center;
+}
+
+.message_box h4 {
+    padding-top: 5px;
+    font-family: "Russo One", sans-serif;
+    color: black;
+}
+
 .scorecard {
     text-align: center;
 }

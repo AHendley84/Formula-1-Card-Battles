@@ -12,9 +12,12 @@
     <!-- Game Header -->
     <header>
         <div class="container-fluid no-gutters game_header">
+            <div class="message_box">
+                <h4 id="round_message">#</h4>
+            </div>
             <div class="scorecard">
-                <h4>Player 1 Cards</h4>
-                <h4>Computer Cards</h4>
+                <h4 id="player_score">#</h4>
+                <h4 id="computer_score">#</h4>
             </div>
         </div>
     </header>
@@ -36,6 +39,14 @@
                             <h4 id="team_name">Team Name</h4>
                                 <table>
                                     <tbody>
+                                        <tr>
+                                            <td>Car Number:</td>
+                                            <td id="players_car_number">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nationality:</td>
+                                            <td id="players_driver_nationality">#</td>
+                                        </tr>
                                         <tr>
                                             <td>Races Entered:</td>
                                             <td id="player_gp_value">#</td>
@@ -75,6 +86,14 @@
                             <h4 id="team_name">Team Name</h4>
                             <table>
                                 <tbody>
+                                    <tr>
+                                        <td>Car Number:</td>
+                                        <td id="computer_car_number">#</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nationality:</td>
+                                        <td id="computer_driver_nationality">#</td>
+                                    </tr>
                                     <tr>
                                         <td>Races Entered:</td>
                                         <td id="computer_gp_value">?</td>
