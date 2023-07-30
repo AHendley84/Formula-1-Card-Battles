@@ -69,15 +69,17 @@ function assignCurrentCard() {
 
 }
 
+function cardDisplay() {
+    
+}
+
 /**
- * The function to actually run the game.
+ * The function to run the game and it's sub-functions.
  */
 function playGame() {
     dealCards();
     assignCurrentCard();
+    cardDisplay();
 }
 
 playGame();
-
-console.log(playerCardCurrent);
-console.log(computerCardCurrent);
