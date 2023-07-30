@@ -23,16 +23,61 @@ const driverCardDeck = [
     {driverName: "Daniel Ricciardo", teamName: "AlphaTauri", nationality: "Australian", carNumber: 3, careerPodiums: 32, careerPoints: 1311, gpEntered: 232, raceWins: 8, driverChampionships: 0, img1: 'ricciardo.png', img2: 'alpha_tauri.jpg'}
 ];
 
-// Variables to obtain the players chosen value
+// Player and computer card variables with empty objects
 
-const pCareerPodiums = document.getElementById("player_podiums_value");
-const pCareerPoints = document.getElementById("player_points_value");
-const pGpEntered = document.getElementById("player_gp_value");
-const pRaceWins = document.getElementById("player_wins_value");
-const pDriverChamps = document.getElementById("player_champs_value");
+const playerCards = [];
+const computerCards = [];
 
-// Variables to display who won the round and current scores 
+// Variable object for the current card in play
 
-const roundMessage = document.getElementById("round_message");
-const displayPlayerScore = document.getElementById("player_score");
-const displayComputerScore = document.getElementById("computer_score");
+const playerCardCurrent = [];
+const computerCardCurrent = [];
+
+
+/**
+ * Function to randomly assign 10 cards each to the player and the computer
+ */
+
+function dealCards() {
+    const cardDeckLength = driverCardDeck.length;
+    let playerCardCount = 0;
+    let computerCardCount = 0;
+
+    for (let i = cardDeckLength; i > 0; i--) {
+        let cardIndex = Math.floor(Math.random() * i);
+        let randomCard = driverCardDeck.splice(cardIndex, 1);
+
+        if (playerCardCount > computerCardCount) {
+            computerCards.push(randomCard[0]);
+            computerCardCount +=1;
+        } else if (playerCardCount === computerCardCount) {
+            playerCards.push(randomCard[0]);
+            playerCardCount +=1;
+        };
+    };
+    
+};
+
+// Assign a random card from the players and the computers deck 
+
+function assignCurrentCard() {
+    const playerCurrent = Math.floor((Math.random() * playerCards.length));
+    const computerCurrent = Math.floor((Math.random() * computerCards.length));
+
+    playerCardCurrent.push(playerCards.splice(playerCurrent, 1)[0]);
+    computerCardCurrent.push(computerCards.splice(computerCurrent, 1)[0]);
+
+}
+
+/**
+ * The function to actually run the game.
+ */
+function playGame() {
+    dealCards();
+    assignCurrentCard();
+}
+
+playGame();
+
+console.log(playerCardCurrent);
+console.log(computerCardCurrent);
