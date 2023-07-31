@@ -107,7 +107,7 @@ a {
     background: url(../images/carbon.jpg) no-repeat center;
     background-size: cover;
     max-width: 500px;
-    min-height: 300px;
+    max-height: 400px;
     border: solid 2px lightgray;
     border-radius: 15px;
 }
@@ -145,6 +145,7 @@ a {
 }
 
 .driver_info_column h3, h4 {
+    margin-top: 5px;
     font-family: "Russo One", sans-serif;
     color: white;
 }
@@ -171,6 +172,10 @@ td {
 
 .driver_info_column {
     margin-right: 10px;
+}
+
+#td {
+    text-align: center;
 }
 
 
@@ -216,12 +221,12 @@ td {
     }
 
     .player_current_card {
-        max-width: 500px;
+        max-width: 550px;
         min-height: 400px;
     }
 
     .computer_current_card {
-        max-width: 500px;
+        max-width: 550px;
         min-height: 400px;
     }
 
@@ -262,6 +267,10 @@ td {
     td {
         padding-top: 3px;
         padding-bottom: 3px;
+    }
+
+    .driver_info_column h3, h4 {
+        margin-top: 10px;
     }
 }
 

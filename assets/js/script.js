@@ -69,8 +69,53 @@ function assignCurrentCard() {
 
 }
 
-function cardDisplay() {
-    
+// Function to display driver and team image details on screen
+
+const playerDriverImage = document.getElementById("player_driver_image");
+const playerTeamImage = document.getElementById("player_team_image");
+const computerDriverImage = document.getElementById("computer_driver_image");
+const computerTeamImage = document.getElementById("computer_team_image");
+
+function displayImages() {
+    playerDriverImage.src = `assets/images/drivers/${playerCardCurrent[0].img1}`;
+    playerTeamImage.src = `assets/images/team_logos/${playerCardCurrent[0].img2}`;
+    computerDriverImage.src = `assets/images/drivers/${computerCardCurrent[0].img1}`;
+    computerTeamImage.src = `assets/images/team_logos/${computerCardCurrent[0].img2}`;
+};
+
+//Function to set player and computer driver stats
+
+const playDriveName = document.getElementById("player_driver_name");
+const playTeamName = document.getElementById("player_team_name");
+const playCarNum = document.getElementById("players_car_number");
+const playNat = document.getElementById("players_driver_nationality");
+const playRace = document.getElementById("player_gp_value");
+const playPoints = document.getElementById("player_points_value");
+const playPodium = document.getElementById("player_podiums_value");
+const playWins = document.getElementById("player_wins_value");
+const playChamps = document.getElementById("player_champs_value");
+
+const compDriveName = document.getElementById("computer_driver_name");
+const compTeamName = document.getElementById("computer_team_name");
+const compCarNum = document.getElementById("computer_car_number");
+const compNat = document.getElementById("computer_driver_nationality");
+
+function displayDriverStats() {
+    //Player stats
+    playDriveName.innerText = `${playerCardCurrent[0].driverName}`;
+    playTeamName.innerText = `${playerCardCurrent[0].teamName}`;
+    playCarNum.innerText = `${playerCardCurrent[0].carNumber}`;
+    playNat.innerText = `${playerCardCurrent[0].nationality}`;
+    playRace.innerText = `${playerCardCurrent[0].gpEntered}`;
+    playPoints.innerText = `${playerCardCurrent[0].careerPoints}`;
+    playPodium.innerText = `${playerCardCurrent[0].careerPodiums}`;
+    playWins.innerText = `${playerCardCurrent[0].raceWins}`;
+    playChamps.innerText = `${playerCardCurrent[0].raceWins}`;
+    //computer stats
+    compDriveName.innerText = `${computerCardCurrent[0].driverName}`;
+    compTeamName.innerText = `${computerCardCurrent[0].teamName}`;
+    compCarNum.innerText = `${computerCardCurrent[0].carNumber}`;
+    compNat.innerText = `${computerCardCurrent[0].driverChampionships}`;
 }
 
 /**
@@ -79,7 +124,10 @@ function cardDisplay() {
 function playGame() {
     dealCards();
     assignCurrentCard();
-    cardDisplay();
+    displayImages();
+    displayDriverStats();
 }
 
 playGame();
+console.log(playerCardCurrent);
+console.log(computerCardCurrent);
