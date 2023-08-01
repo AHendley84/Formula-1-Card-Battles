@@ -59,6 +59,17 @@ HTML Markup Validator results:
 ### Resposiveness
 
 ### Bugs
+- Bug 1 - Nationality on the active computer card was displaying a number
+Issue: 
+```
+compNat.innerText = `${computerCardCurrent[0].driverChampionships}`;
+```
+The above line of code was pointing to the number of drivers championships rather than the nationality.
+Fix:
+```
+compNat.innerText = `${computerCardCurrent[0].nationality}`;
+```
+Amending the code to look at the nationality inside the active card object resolved the issue.
 
 ### Unfixed Bugs
 

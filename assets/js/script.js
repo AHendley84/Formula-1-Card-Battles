@@ -115,7 +115,7 @@ function displayDriverStats() {
     compDriveName.innerText = `${computerCardCurrent[0].driverName}`;
     compTeamName.innerText = `${computerCardCurrent[0].teamName}`;
     compCarNum.innerText = `${computerCardCurrent[0].carNumber}`;
-    compNat.innerText = `${computerCardCurrent[0].driverChampionships}`;
+    compNat.innerText = `${computerCardCurrent[0].nationality}`;
 }
 
 /**
