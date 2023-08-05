@@ -83,7 +83,7 @@ function displayImages() {
     computerTeamImage.src = `assets/images/team_logos/${computerCardCurrent[0].img2}`;
 };
 
-//Function to set player and computer driver stats
+//Variables and function to set player and computer driver stats
 
 const playDriveName = document.getElementById("player_driver_name");
 const playTeamName = document.getElementById("player_team_name");
@@ -117,6 +117,52 @@ function displayDriverStats() {
     compCarNum.innerText = `${computerCardCurrent[0].carNumber}`;
     compNat.innerText = `${computerCardCurrent[0].nationality}`;
 }
+
+// Event listeners for the stat selection
+
+player_gp_value.addEventListener("click", () => {
+    compareStat("gpEntered");
+});
+
+player_points_value.addEventListener("click", () => {
+    compareStat("careerPoints");
+});
+
+player_podiums_value.addEventListener("click", () => {
+    compareStat("careerPodiums");
+});
+
+player_wins_value.addEventListener("click", () => {
+    compareStat("raceWins");
+});
+
+player_champs_value.addEventListener("click", () => {
+    compareStat("driverChampionships");
+});
+
+// Function to compare the selected stats
+
+function compareStats(stat) {
+    const playerStat = playerCardCurrent[0][stat];
+    const compStat = computerCardCurrent[0][stat];
+
+    switch(stat) {
+        case "gpEntered":
+        case "careerPoints":
+        case "careerPodiums":
+        case "raceWins":
+        case "driverChampionships":    
+            if (playerStat > compStat) {
+                processRoundOutcome("player-win");
+            } else if (compStat > playerStat){
+                processRoundOutcome("computer-win");
+            } else {
+                processRoundOutcome("draw");
+            }
+        break;
+    }
+}
+
 
 /**
  * The function to run the game and it's sub-functions.
