@@ -33,6 +33,10 @@ const computerCards = [];
 const playerCardCurrent = [];
 const computerCardCurrent = [];
 
+// Score variables for both
+
+let playerScore = 0;
+let computerScore = 0;
 
 /**
  * Function to randomly assign 10 cards each to the player and the computer
@@ -110,13 +114,19 @@ function displayDriverStats() {
     playPoints.innerText = `${playerCardCurrent[0].careerPoints}`;
     playPodium.innerText = `${playerCardCurrent[0].careerPodiums}`;
     playWins.innerText = `${playerCardCurrent[0].raceWins}`;
-    playChamps.innerText = `${playerCardCurrent[0].raceWins}`;
+    playChamps.innerText = `${playerCardCurrent[0].driverChampionships}`;
     //computer stats
     compDriveName.innerText = `${computerCardCurrent[0].driverName}`;
     compTeamName.innerText = `${computerCardCurrent[0].teamName}`;
     compCarNum.innerText = `${computerCardCurrent[0].carNumber}`;
     compNat.innerText = `${computerCardCurrent[0].nationality}`;
 }
+
+// Variables for score display and round winner messages
+
+const playerScoreDisplay = document.getElementById("player_score");
+const computerScoreDisplay = document.getElementById("computer_score");
+const roundWinnerDisplay = document.getElementById("round_message");
 
 // Event listeners for the stat selection
 
@@ -142,7 +152,7 @@ player_champs_value.addEventListener("click", () => {
 
 // Function to compare the selected stats
 
-function compareStats(stat) {
+function compareStat(stat) {
     const playerStat = playerCardCurrent[0][stat];
     const compStat = computerCardCurrent[0][stat];
 
@@ -153,27 +163,84 @@ function compareStats(stat) {
         case "raceWins":
         case "driverChampionships":    
             if (playerStat > compStat) {
-                processRoundOutcome("player-win");
+                determineRoundWinner("player-win");
             } else if (compStat > playerStat){
-                processRoundOutcome("computer-win");
+                determineRoundWinner("computer-win");
             } else {
-                processRoundOutcome("draw");
+                determineRoundWinner("draw");
             }
         break;
     }
 }
 
+// Function to determine the winner of each round
 
-/**
- * The function to run the game and it's sub-functions.
- */
+function determineRoundWinner(outcome) {
+    const playerWin = outcome === "player-win";
+    const computerWin = outcome === "computer-win";
+ 
+    if(playerWin) {
+        playerScore+=1;
+        playerScoreDisplay.textContent = `Player score: ${playerScore}`;
+
+        playerCards.push(computerCardCurrent.splice(0,1)[0]);
+        playerCards.push(playerCardCurrent.splice(0,1)[0]);
+    } else if(computerWin) {
+        computerScore+=1;
+        computerScoreDisplay.textContent = `Computer score: ${computerScore}`;
+
+        computerCards.push(playerCardCurrent.splice(0,1)[0]);
+        computerCards.push(computerCardCurrent.splice(0,1)[0]);
+    } else {
+        playerCards.push(playerCardCurrent.splice(0,1)[0]);
+        computerCards.push(computerCardCurrent.splice(0,1)[0]);
+    }
+
+    const winnerText = playerWin ? "You" : "The Computer";
+    const tieMessage = "This round is a tie!";
+    const winnerMessage = `${winnerText} won this round`
+   
+    if(playerWin || computerWin) {
+        roundWinnerDisplay.textContent = winnerMessage;
+    } else {
+        roundWinnerDisplay.textContent = tieMessage;
+    }
+    resetMessageDisplay();
+
+    setTimeout( () => {roundWinnerDisplay.style.display = "none"}, 2000);
+    playGame();
+}
+
+const resetMessageDisplay = () => roundWinnerDisplay.style.display = "inline-block";
+
+ //The function to intitialise the game.
+//function initialise() {
+    //dealCards();
+    //displayImages();
+    //displayDriverStats();
+    //assignCurrentCard();
+//}
+
+//function to play the game
 function playGame() {
     dealCards();
     assignCurrentCard();
     displayImages();
     displayDriverStats();
+    if (playerCards.length < 20 && computerCards.length < 20) {
+        assignCurrentCard();
+        return
+    }
+
+    const playerGameWin = playerCards.length === 20;
+    const computerGameWin = computerCards.length === 20;
+    const winnerGameText = playerWin ? "You" : "The computer";
+    const winnerGameMessage = `${winnerGameText} won the game`;
+
+    if ( playerGameWin || computerGameWin ) {
+        roundWinnerDisplay.textContent = winnerGameMessage;
+    }
+
 }
 
 playGame();
-console.log(playerCardCurrent);
-console.log(computerCardCurrent);
