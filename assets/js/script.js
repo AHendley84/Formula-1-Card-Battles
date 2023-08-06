@@ -11,7 +11,7 @@ const driverCardDeck = [
     {driverName: "Lance Stroll", teamName: "Aston Martin", nationality: "Canadian", carNumber: 18, careerPodiums: 3, careerPoints: 238, gpEntered: 132, raceWins: 0, driverChampionships: 0, img1: 'stroll.png', img2: 'aston_martin.jpg'},
     {driverName: "Lando Norris", teamName: "McLaren", nationality: "British", carNumber: 4, careerPodiums: 7, careerPoints: 470, gpEntered: 92, raceWins: 0, driverChampionships: 0, img1: 'norris.png', img2: 'mclaren.jpg'},
     {driverName: "Oscar Piastri", teamName: "McLaren", nationality: "Australian", carNumber: 81, careerPodiums: 0, careerPoints: 17, gpEntered: 10, raceWins: 0, driverChampionships: 0, img1: 'piastri.png', img2: 'mclaren.jpg'},
-    {driverName: "Esteban Ocon", teamName: "Alpine", nationality: "French", carNumber: 31, careerPodiums: 3, careerPoints: 395, gpEntered: 121, raceWins: 1, driverChampionships: 3, img1: 'ocon.png', img2: 'alpine.jpg'},
+    {driverName: "Esteban Ocon", teamName: "Alpine", nationality: "French", carNumber: 31, careerPodiums: 3, careerPoints: 395, gpEntered: 121, raceWins: 1, driverChampionships: 0, img1: 'ocon.png', img2: 'alpine.jpg'},
     {driverName: "Pierre Gasly", teamName: "Alpine", nationality: "French", carNumber: 10, careerPodiums: 3, careerPoints: 348, gpEntered: 118, raceWins: 1, driverChampionships: 0, img1: 'gasly.png', img2: 'alpine.jpg'},
     {driverName: "Alexander Albon", teamName: "Williams", nationality: "Thai", carNumber: 23, careerPodiums: 2, careerPoints: 212, gpEntered: 69, raceWins: 0, driverChampionships: 0, img1: 'albon.png', img2: 'williams.jpg'},
     {driverName: "Logan Sargeant", teamName: "Williams", nationality: "American", carNumber: 2, careerPodiums: 0, careerPoints: 0, gpEntered: 10, raceWins: 0, driverChampionships: 0, img1: 'sargeant.png', img2: 'williams.jpg'},
@@ -207,7 +207,7 @@ function determineRoundWinner(outcome) {
     }
     resetMessageDisplay();
 
-    setTimeout( () => {roundWinnerDisplay.style.display = "none"}, 2000);
+    setTimeout( () => {roundWinnerDisplay.style.display = "none"}, 8000);
     playGame();
 }
 
