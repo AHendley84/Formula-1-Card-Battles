@@ -59,19 +59,20 @@ function dealCards() {
             playerCardCount +=1;
         };
     };
+    assignCurrentCard();
     
 };
 
 // Assign a random card from the players and the computers deck 
 
 function assignCurrentCard() {
+    if (playerCards.length > 0 && computerCards.length > 0) {
     const playerCurrent = Math.floor((Math.random() * playerCards.length));
     const computerCurrent = Math.floor((Math.random() * computerCards.length));
-
-    playerCardCurrent.push(playerCards.splice(playerCurrent, 1)[0]);
-    computerCardCurrent.push(computerCards.splice(computerCurrent, 1)[0]);
-
-}
+        playerCardCurrent.push(playerCards.splice(playerCurrent, 1)[0]);
+        computerCardCurrent.push(computerCards.splice(computerCurrent, 1)[0]);
+    }
+};
 
 // Function to display driver and team image details on screen
 
@@ -224,11 +225,14 @@ const resetMessageDisplay = () => roundWinnerDisplay.style.display = "inline-blo
 //function to play the game
 function playGame() {
     dealCards();
-    assignCurrentCard();
     displayImages();
     displayDriverStats();
     if (playerCards.length < 20 && computerCards.length < 20) {
         assignCurrentCard();
+        console.log(playerCards);
+        console.log(computerCards);
+        console.log(playerCardCurrent);
+        console.log(computerCardCurrent);
         return
     }
 
