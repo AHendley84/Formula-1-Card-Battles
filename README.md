@@ -71,6 +71,34 @@ compNat.innerText = `${computerCardCurrent[0].nationality}`;
 ```
 Amending the code to look at the nationality inside the active card object resolved the issue.
 
+- Bug 2 - Uncaught TypeError: Cannot read properties of undefined (reading 'img1')
+Issue: Uncaught TypeError: Cannot read properties of undefined (reading 'img1')
+```
+function assignCurrentCard() {
+    const playerCurrent = Math.floor((Math.random() * playerCards.length));
+    const computerCurrent = Math.floor((Math.random() * computerCards.length));
+
+    playerCardCurrent.push(playerCards.splice(playerCurrent, 1)[0]);
+    computerCardCurrent.push(computerCards.splice(computerCurrent, 1)[0]);
+};
+```
+The above error kept occuring in the console. What was visibile in the game was the drivers name, team name and the drivers would change, however, the drivers image and team image would remain the same as the previous card. I tried multiple times to understand what was casuing the issue but couldn't see from the code what was causing it. I searched via Google for some answers and found generic responses to the error code, but none that would fix the issue. I decided to reach out to the #project-milestone-2 channel for some guidance. The guidance helped me fix and improve my code.
+Fix:
+```
+function assignCurrentCard() {
+    if (playerCards.length > 0) {
+        const playerCurrent = Math.floor((Math.random() * playerCards.length));
+        playerCardCurrent.push(playerCards.splice(playerCurrent, 1)[0]);
+    };
+
+    if (computerCards.length > 0) {
+        const computerCurrent = Math.floor((Math.random() * computerCards.length));
+        computerCardCurrent.push(computerCards.splice(computerCurrent, 1)[0]);
+    };
+    displayImages();
+    displayDriverStats();
+};
+```
 ### Unfixed Bugs
 
 ---

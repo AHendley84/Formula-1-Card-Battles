@@ -58,20 +58,23 @@ function dealCards() {
             playerCards.push(randomCard[0]);
             playerCardCount +=1;
         };
-    };
-    assignCurrentCard();
-    
+    };    
 };
 
-// Assign a random card from the players and the computers deck 
+// Assign a random card from the players and the computers deck whilst dispolaying the images and the driver stats 
 
 function assignCurrentCard() {
-    if (playerCards.length > 0 && computerCards.length > 0) {
-    const playerCurrent = Math.floor((Math.random() * playerCards.length));
-    const computerCurrent = Math.floor((Math.random() * computerCards.length));
+    if (playerCards.length > 0) {
+        const playerCurrent = Math.floor((Math.random() * playerCards.length));
         playerCardCurrent.push(playerCards.splice(playerCurrent, 1)[0]);
+    };
+
+    if (computerCards.length > 0) {
+        const computerCurrent = Math.floor((Math.random() * computerCards.length));
         computerCardCurrent.push(computerCards.splice(computerCurrent, 1)[0]);
-    }
+    };
+    displayImages();
+    displayDriverStats();
 };
 
 // Function to display driver and team image details on screen
@@ -214,31 +217,16 @@ function determineRoundWinner(outcome) {
 
 const resetMessageDisplay = () => roundWinnerDisplay.style.display = "inline-block";
 
- //The function to intitialise the game.
-//function initialise() {
-    //dealCards();
-    //displayImages();
-    //displayDriverStats();
-    //assignCurrentCard();
-//}
-
 //function to play the game
 function playGame() {
-    dealCards();
-    displayImages();
-    displayDriverStats();
-    if (playerCards.length < 20 && computerCards.length < 20) {
+        if (playerCards.length < 20 && computerCards.length < 20) {
         assignCurrentCard();
-        console.log(playerCards);
-        console.log(computerCards);
-        console.log(playerCardCurrent);
-        console.log(computerCardCurrent);
         return
     }
 
     const playerGameWin = playerCards.length === 20;
     const computerGameWin = computerCards.length === 20;
-    const winnerGameText = playerWin ? "You" : "The computer";
+    const winnerGameText = playerGameWin ? "You" : "The computer";
     const winnerGameMessage = `${winnerGameText} won the game`;
 
     if ( playerGameWin || computerGameWin ) {
@@ -247,4 +235,5 @@ function playGame() {
 
 }
 
+dealCards();
 playGame();
