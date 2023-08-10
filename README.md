@@ -23,9 +23,9 @@ Google Fonts was used to import the 'Russo One' and the 'Exo 2' fonts into the s
 ## Technologies Used
 ---
 ### Languages Used
-- [HTML5]()
-- [CSS]()
-- [JavaScript]()
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Programs Used
 - [Balsamiq](https://balsamiq.com/) was used for pre-visualisation of the pages.
@@ -109,6 +109,7 @@ function assignCurrentCard() {
 ---
 ## Credits & Acknowledgments
 ---
+- Massive thank you to [astral-g](https://github.com/astral-g) for his [Top Trumps Game](https://github.com/astral-g/Top-Trumps-Game) which allowed me to base and modify my own game on.
 - Driver and Team Logo images courtsey of skysports.com.
 - Driver stats and information courtsey of Formula1.com.
 - Image used in 404.html courtesy of [CNN.com](https://edition.cnn.com/2018/08/30/motorsport/formula-one-crashes-defined-sport-halo-spt-intl/index.html).
