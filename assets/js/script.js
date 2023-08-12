@@ -477,7 +477,8 @@ function determineRoundWinner(outcome) {
 
 const resetMessageDisplay = () => roundWinnerDisplay.style.display = "inline-block";
 
-//function to play the game
+//function to play the game amd determine who has won the game
+
 function playGame() {
         if (playerCards.length < 20 && computerCards.length < 20) {
         assignCurrentCard();
@@ -486,11 +487,11 @@ function playGame() {
 
     const playerGameWin = playerCards.length === 20;
     const computerGameWin = computerCards.length === 20;
-    const winnerGameText = playerGameWin ? "You" : "The computer";
-    const winnerGameMessage = `${winnerGameText} won the game`;
-
-    if ( playerGameWin || computerGameWin ) {
-        roundWinnerDisplay.textContent = winnerGameMessage;
+    
+    if ( playerGameWin > computerGameWin ) {
+        window.location.href = "player_winner.html";
+    } else {
+        window.location.href = "computer_winner.html";
     }
 
 }

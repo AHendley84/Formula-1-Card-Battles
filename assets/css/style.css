@@ -9,12 +9,26 @@
 .error_main {
     background: url(../images/404image.jpg) no-repeat center;
     background-size: cover;
-    height: 300px;
+    height: 500px;
     width: auto;
     
 }
 
-/*-----Header*/
+.winner_main {
+    background: url(../images/playerwinnerimage.jpg) no-repeat right;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+}
+
+.loser_main {
+    background: url(../images/computerwinnerimage.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+}
+
+/*-----Headers*/
 
 .f1_header {
     min-height: 100px;
@@ -36,7 +50,21 @@
 .error_header h1 {
     font-family: "Russo One", sans-serif;
     font-style: italic bold;
-    font-size: 5rem;
+    font-size: 4rem;
+    color: darkred;
+}
+
+.winner_header h1 {
+    font-family: "Russo One", sans-serif;
+    font-style: italic bold;
+    font-size: 4rem;
+    color: darkred;
+}
+
+.loser_header h1 {
+    font-family: "Russo One", sans-serif;
+    font-style: italic bold;
+    font-size: 4rem;
     color: darkred;
 }
 
@@ -80,10 +108,16 @@ a {
     padding-top: 5px;
     font-family: "Russo One", sans-serif;
     color: black;
+    font-size: 1rem;
 }
 
 .scorecard {
     text-align: center;
+}
+
+#round_message {
+    height: 30px;
+    margin-bottom: 5px;
 }
 
 .play_area {
@@ -101,24 +135,13 @@ a {
     margin: 0 auto;
 }
 
-.player_current_card {
+.current_card {
     display: block;
     margin: 0 auto;
     background: url(../images/carbon.jpg) no-repeat center;
     background-size: cover;
-    max-width: 500px;
+    max-width: 350px;
     max-height: 400px;
-    border: solid 2px lightgray;
-    border-radius: 15px;
-}
-
-.computer_current_card {
-    display: block;
-    margin: 0 auto;
-    background: url(../images/carbon.jpg) no-repeat center;
-    background-size: cover;
-    max-width: 500px;
-    min-height: 300px;
     border: solid 2px lightgray;
     border-radius: 15px;
 }
@@ -142,6 +165,7 @@ a {
     padding-top: 5px;
     font-family: "Russo One", sans-serif;
     color: black;
+    font-size: 1rem;
 }
 
 .driver_info_column h3, h4 {
@@ -167,7 +191,7 @@ a {
 td {
     font-family: "Exo 2", sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .driver_info_column {
@@ -178,6 +202,37 @@ td {
     text-align: center;
 }
 
+/*-----Winner page content*/
+.winner_content {
+    position: absolute;
+    top: 35%;
+}
+.winner_content h2 {
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/*-----Loser page content*/
+.loser_content {
+    position: absolute;
+    top: 35%;
+}
+.loser_content h2 {
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 
 /*-----404 Main Content*/
 .error_content {
@@ -191,6 +246,7 @@ td {
     color: white;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     font-size: 2rem;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -217,7 +273,15 @@ td {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .error_main {
-        height: 500px;
+        height: 600px;
+    }
+
+    .winner_main {
+        height: 600px;
+    }
+
+    .loser_main {
+        height: 600px;
     }
 
     .player_current_card {
@@ -277,7 +341,27 @@ td {
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     .error_main {
-        height: 600px;
+        height: 750px;
+    }
+
+    .winner_main {
+        height: 750px;
+    }
+
+    .loser_main {
+        height: 750px;
+    }
+
+    .winner_content h2 {
+        font-size: 4rem;
+    }
+
+    .error_content h2 {
+        font-size: 4rem;
+    }
+
+    .loser_content h2 {
+        font-size: 4rem;
     }
 
     .f1_header h1 {
@@ -295,7 +379,11 @@ td {
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     .error_main {
-        height: 700px;
+        height: 800px;
+    }
+
+    .winner_main {
+        height: 800px;
     }
 
     .f1_header h1 {
@@ -313,7 +401,15 @@ td {
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .error_main {
-        height: 800px;
+        height: 850px;
+    }
+
+    .winner_main {
+        height: 850px;
+    }
+
+    .loser_main {
+        height: 850px;
     }
 
     .error_content {
