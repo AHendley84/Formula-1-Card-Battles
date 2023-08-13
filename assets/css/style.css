@@ -198,8 +198,21 @@ td {
     margin-right: 10px;
 }
 
-#td {
+table {
+    background-color: transparent;
+}
+
+table .center {
     text-align: center;
+}
+
+table .option {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+table .option:hover {
+    background-color: rgba(255, 0, 0, 0.6);
 }
 
 /*-----Winner page content*/
