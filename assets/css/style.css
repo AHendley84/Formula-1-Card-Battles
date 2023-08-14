@@ -33,39 +33,69 @@
 .f1_header {
     min-height: 100px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkred;
 }
 
 .f1_header h1 {
     font-family: "Russo One", sans-serif;
     font-style: italic bold;
-    font-size: 2rem;
-    color: darkred;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
 }
 
-.game_header {
-    min-height: 75px;
+.error_header {
+    min-height: 100px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkred;
 }
 
 .error_header h1 {
     font-family: "Russo One", sans-serif;
     font-style: italic bold;
     font-size: 4rem;
-    color: darkred;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+.winner_header {
+    min-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkred;
 }
 
 .winner_header h1 {
     font-family: "Russo One", sans-serif;
     font-style: italic bold;
     font-size: 4rem;
-    color: darkred;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+.loser_header {
+    min-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkred;
 }
 
 .loser_header h1 {
     font-family: "Russo One", sans-serif;
     font-style: italic bold;
     font-size: 4rem;
-    color: darkred;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
 }
 
 /*-----Index Main Content*/
@@ -77,8 +107,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: justify;
-    border: solid 2px lightgray;
+    border: solid 2px darkred;
     border-radius: 15px;
+    background: url(../images/carbon.jpg) center;
+}
+
+form {
+    padding-bottom: 10px;
 }
 
 #play_game {
@@ -88,11 +123,15 @@
 
 .welcome_message h2 {
     font-family: "Exo 2", sans-serif;
-    color: darkgray;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .welcome_message p {
     font-family: "Exo 2", sans-serif;
+    color: white;
+    font-weight: bold;
 }
 
 a {
