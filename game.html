@@ -16,8 +16,6 @@
     <!-- Game Main Content -->
     <main>
         <div class="play_area">
-            
-            <h2>Player 1 Active Card</h2>
                 <div class="current_card">
                     <div class="row no-gutters">
                         <div class="col image_column">
@@ -40,23 +38,23 @@
                                         </tr>
                                         <tr>
                                             <td>Races Entered:</td>
-                                            <td id="player_gp_value" class="center option">#</td>
+                                            <td id="player_gp_value" class="center option" onmousemove="changePointer()">#</td>
                                         </tr>
                                         <tr>
                                             <td>Career Points:</td>
-                                            <td id="player_points_value" class="center option">#</td>
+                                            <td id="player_points_value" class="center option" onmousemove="changePointer()">#</td>
                                         </tr>
                                         <tr>
                                             <td>Career Podiums:</td>
-                                            <td id="player_podiums_value" class="center option">#</td>
+                                            <td id="player_podiums_value" class="center option" onmousemove="changePointer()">#</td>
                                         </tr>
                                         <tr>
                                             <td>Race Wins:</td>
-                                            <td id="player_wins_value" class="center option">#</td>
+                                            <td id="player_wins_value" class="center option" onmousemove="changePointer()">#</td>
                                         </tr>
                                         <tr>
                                             <td>Drivers Championships:</td>
-                                            <td id="player_champs_value" class="center option">#</td>
+                                            <td id="player_champs_value" class="center option" onmousemove="changePointer()">#</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -64,15 +62,16 @@
                         </div>
                     </div>
                 </div>
+            <h2>Player Active Card</h2>
                 <div class="container-fluid no-gutters game_header">
                     <div class="scorecard">
-                        <h4 id="player_score">Player Score: 0</h4>
+                        <h4 id="player_score">Player Cards Remaining: 10</h4>
                     </div>
                     <div class="message_box">
                         <h4 id="round_message">It's lights out and away we go!</h4>
                     </div>
                     <div class="scorecard">
-                        <h4 id="computer_score">Computer Score: 0</h4>
+                        <h4 id="computer_score">Computer Cards Remaining: 10</h4>
                     </div>
                 </div>
               <h2>Computer Active Card</h2>

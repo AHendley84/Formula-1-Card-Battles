@@ -444,38 +444,48 @@ function determineRoundWinner(outcome) {
     const computerWin = outcome === "computer-win";
  
     if(playerWin) {
-        playerScore+=1;
-        playerScoreDisplay.textContent = `Player score: ${playerScore}`;
-
+        
         playerCards.push(computerCardCurrent.splice(0,1)[0]);
         playerCards.push(playerCardCurrent.splice(0,1)[0]);
-    } else if(computerWin) {
-        computerScore+=1;
-        computerScoreDisplay.textContent = `Computer score: ${computerScore}`;
 
+        playerScore = playerCards.length;
+        computerScore = computerCards.length;
+        playerScoreDisplay.textContent = `Player Cards Remaining: ${playerScore}`;
+        computerScoreDisplay.textContent = `Computer Cards Remaining: ${computerScore}`;
+    } else if(computerWin) {
+        
         computerCards.push(playerCardCurrent.splice(0,1)[0]);
         computerCards.push(computerCardCurrent.splice(0,1)[0]);
+
+        playerScore = playerCards.length;
+        computerScore = computerCards.length;
+        playerScoreDisplay.textContent = `Player Cards Remaining: ${playerScore}`;
+        computerScoreDisplay.textContent = `Computer Cards Remaining: ${computerScore}`;
     } else {
         playerCards.push(playerCardCurrent.splice(0,1)[0]);
         computerCards.push(computerCardCurrent.splice(0,1)[0]);
     }
 
     const winnerText = playerWin ? "You" : "The Computer";
-    const tieMessage = "This round is a tie!";
-    const winnerMessage = `${winnerText} won this round`;
+    const tieMessage = "The last round was a tie!";
+    const winnerMessage = `${winnerText} won the last round`;
    
     if(playerWin || computerWin) {
         roundWinnerDisplay.textContent = winnerMessage;
     } else {
         roundWinnerDisplay.textContent = tieMessage;
     }
-    resetMessageDisplay();
-
-    setTimeout( () => {roundWinnerDisplay.style.display = "none";}, 8000);
+    
     playGame();
 }
 
-const resetMessageDisplay = () => roundWinnerDisplay.style.display = "inline-block";
+function changePointer() {
+    document.getElementById("player_gp_value").style.cursor = "pointer";
+    document.getElementById("player_points_value").style.cursor = "pointer";
+    document.getElementById("player_podiums_value").style.cursor = "pointer";
+    document.getElementById("player_wins_value").style.cursor = "pointer";
+    document.getElementById("player_champs_value").style.cursor = "pointer";
+};
 
 //function to play the game amd determine who has won the game
 
@@ -489,9 +499,9 @@ function playGame() {
     const computerGameWin = computerCards.length === 20;
     
     if ( playerGameWin > computerGameWin ) {
-        window.location.href = "player_winner.html";
+        window.location.href = "player_win.html";
     } else {
-        window.location.href = "computer_winner.html";
+        window.location.href = "computer_win.html";
     }
 
 }

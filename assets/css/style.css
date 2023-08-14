@@ -107,7 +107,7 @@ a {
 .message_box h4 {
     padding-top: 5px;
     font-family: "Russo One", sans-serif;
-    color: black;
+    color: darkgreen;
     font-size: 1rem;
 }
 
@@ -125,9 +125,12 @@ a {
 }
 
 .play_area h2 {
+    font-family: "Russo One", sans-serif;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .image_column {
@@ -140,9 +143,9 @@ a {
     margin: 0 auto;
     background: url(../images/carbon.jpg) no-repeat center;
     background-size: cover;
-    max-width: 350px;
-    max-height: 400px;
-    border: solid 2px lightgray;
+    width: 360px;
+    height: 350px;
+    border: solid 5px darkred;
     border-radius: 15px;
 }
 
@@ -162,36 +165,23 @@ a {
 }
 
 .scorecard h4 {
-    padding-top: 5px;
     font-family: "Russo One", sans-serif;
     color: black;
     font-size: 1rem;
 }
 
 .driver_info_column h3, h4 {
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: "Russo One", sans-serif;
     color: white;
-}
-
-#driver_name {
-    padding-top: 10px;
-    font-size: 20px;
     font-style: italic;
-    font-weight: bold;
-}
-
-#team_name {
-    padding-top: 5px;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
 }
 
 td {
     font-family: "Exo 2", sans-serif;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .driver_info_column {
@@ -208,11 +198,10 @@ table .center {
 
 table .option {
     color: goldenrod;
-    font-weight: bold;
 }
 
 table .option:hover {
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: rgba(139, 0, 0, 0.6);
 }
 
 /*-----Winner page content*/
