@@ -144,7 +144,6 @@ a {
 }
 
 .message_box h4 {
-    padding-top: 5px;
     font-family: "Russo One", sans-serif;
     color: darkgreen;
     font-size: 1rem;
@@ -325,14 +324,13 @@ table .option:hover {
         height: 600px;
     }
 
-    .player_current_card {
-        max-width: 550px;
+    .current_card {
+        min-width: 500px;
         min-height: 400px;
     }
 
-    .computer_current_card {
-        max-width: 550px;
-        min-height: 400px;
+    td {
+        font-size: 16px;
     }
 
     .image_column {
@@ -415,6 +413,57 @@ table .option:hover {
         margin-right: 75px;
         margin-bottom: 50px;
     }
+
+    .current_card {
+        min-width: 600px;
+    }
+
+    .driver_info_column {
+        margin-left: 20px;
+    }
+
+    .driver_info_column h3 {
+        font-size: 2.2rem;
+    }
+
+    .driver_info_column h4 {
+        font-size: 1.7rem;
+    }
+
+    .driver_image {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 175px;
+        width: 175px;
+    }
+    
+    .team_image {
+        display: block;
+        margin: 0 auto;
+        width: 151px;
+        height: 113px;
+    }
+
+    td {
+        font-size: 18px;
+    }
+
+    .scorecard h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .message_box {
+        padding-bottom: 5px;
+    }
+
+    .message_box h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 2rem;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -468,4 +517,17 @@ table .option:hover {
         margin-right: 125px;
         margin-bottom: 75px;
     }
+
+    .play_area {
+        min-height: 800px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .play_area h2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
