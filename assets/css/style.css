@@ -308,6 +308,7 @@ table .option:hover {
     font-size: 35px;
 }
 
+
 /*-----Media Queries*/
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -490,6 +491,24 @@ table .option:hover {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+
+    .index_content {
+        min-height: 500px;
+    }
+
+    .welcome_message h2 {
+        font-size: 2.5rem;
+    }
+
+    .welcome_message p {
+        font-size: 1.5rem;
+    }
+
+    #play_game {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
     .error_main {
         height: 850px;
     }
@@ -519,15 +538,60 @@ table .option:hover {
     }
 
     .play_area {
-        min-height: 800px;
+        min-height: 900px;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        padding-bottom: 0px;
     }
 
     .play_area h2 {
-        display: flex;
-        flex-direction: column;
+        font-size: 3rem;
     }
 
+    .image_column {
+        margin-left: 20px;
+    }
 
+    .driver_image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .player_card {
+        margin: auto;
+    }
+
+    .game_information {
+        margin: auto;
+    }
+
+    .computer_card {
+        margin: auto;
+    }
+
+    .player_card h2 {
+        margin-bottom: 15px;
+    }
+
+    .computer_card h2 {
+        margin-bottom: 15px;
+    }
+
+    .current_card {
+        width: 700px;
+        height: 480px;
+    }
+
+    .driver_info_column h3 {
+        font-size: 2.5rem;
+    }
+
+    .driver_info_column h4 {
+        font-size: 2rem;
+    }
+
+    td {
+        font-size: 22px;
+    }
 }
