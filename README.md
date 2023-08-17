@@ -1,17 +1,34 @@
 # Formula 1 Card Battles
 ## Interactive Front End Development Project
 
-For my second project I am creating a Top Trumps style game using the 2023 Formula 1 championships drivers and teams.
+For my second project I am creating a Top Trumps style game using the 2023 Formula 1 championships drivers and teams. The game involves a deck of 20 cards representing each current driver from the 10 teams that represent the Formula 1 world championship. The aim is to reduce your opponent’s cards pile to zero. If this is achieved the player will be notified that they have won, however, if the computer obtains all their cards they will be notified of their loss.
+
+![Visual Representation](documentation/responsive_representation.png)
 
 ---
 ## User Experience (UX) & Design
 ---
 ### User Stories
+- First Time Visitor
+
+    - As a first time visitor, 
+
+- Returning Visitor
+
+    - As a returning visitor, 
+
+- Website Administrator
+
+    - As a website administrator,
 
 ### Color Scheme
+The colors selected for the color palette are colors that are usually associated with Formula One. Red for the lights to signal the start of the race and to advise if the race has been stopped due to an accident. White and black for the chequered flag and green and yellow used to indicate to drivers if there is caution ahead (yellow) and that normal racing can resume (green).
+
+![Color Palette](documentation/color_scheme.png)
+
 
 ### Typography
-Google Fonts was used to import the 'Russo One' and the 'Exo 2' fonts into the style.css file.
+Google Fonts was used to import the 'Russo One' and the 'Exo 2' fonts into the style.css file for use across all pages.
 
 ### Wireframes
 
@@ -33,11 +50,10 @@ Google Fonts was used to import the 'Russo One' and the 'Exo 2' fonts into the s
 - [Font Awesome](https://fontawesome.com/) was utilised for icons used on the site for the social media icons.
 - [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) was used for responsive grids, table and button elements.
 - [Git](https://git-scm.com/) was used for version control. I utilised the CLI terminal in GitPod & codeanywhere to commit and push to GitHub.
-- [GitPod](https://gitpod.io) was used as the cloud based enviroment based on VS Code to develop the site.
-- [codeanywhere](https://www.codeanywhere.com) was also used as the cloud based enviroment based on VS Code to develop the site.
+- [Visual Studio Code](https://code.visualstudio.com/) was used as the development enviroment to develop the site.
 - [GitHub](https://github.com/) was used as the repository for the project after being pushed from GitPod.
-- [Google Maps](https://www.google.com/maps) for the business location map.
 - [TinyPNG](https://tinypng.com/) used for image compression.
+- [Adobe Color](https://color.adobe.com/create/color-wheel) used to produce the color palette image in the README.
 
 ---
 ## Testing
