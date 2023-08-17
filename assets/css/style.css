@@ -154,7 +154,7 @@ a {
 }
 
 #round_message {
-    height: 30px;
+    min-height: 30px;
     margin-bottom: 5px;
 }
 
