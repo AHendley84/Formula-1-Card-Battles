@@ -1,5 +1,3 @@
- /*jshint esversion: 6 */
-
 // Driver Card Deck
 
 const driverCardDeck = [
@@ -485,7 +483,7 @@ function changePointer() {
     document.getElementById("player_podiums_value").style.cursor = "pointer";
     document.getElementById("player_wins_value").style.cursor = "pointer";
     document.getElementById("player_champs_value").style.cursor = "pointer";
-};
+}
 
 //function to play the game amd determine who has won the game
 

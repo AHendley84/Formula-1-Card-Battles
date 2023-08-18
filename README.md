@@ -11,18 +11,24 @@ For my second project I am creating a Top Trumps style game using the 2023 Formu
 ### User Stories
 - First Time Visitor
 
-    - As a first time visitor, 
+    - As a first time visitor,  I want to get to understand the main purpose of the site.
+    - As a first time visitor,  I want to receive feedback on how I'm progressing in the game.
+    - As a first time visitor,  I want to know if I've won or lost the game.
 
 - Returning Visitor
 
-    - As a returning visitor, 
+    - As a returning visitor, I want to be able to quickly jump back into another game if I've won or lost.
 
 - Website Administrator
 
-    - As a website administrator,
+    - As a website administrator, I want to provide links to my social media channels.
 
 ### Color Scheme
-The colors selected for the color palette are colors that are usually associated with Formula One. Red for the lights to signal the start of the race and to advise if the race has been stopped due to an accident. White and black for the chequered flag and green and yellow used to indicate to drivers if there is caution ahead (yellow) and that normal racing can resume (green).
+The colors selected for the color palette are colors that are usually associated with Formula One:
+- Red for the lights out signal to start the race.
+- White and black for the chequered flag and green
+- Yellow to indicate to drivers if there is caution ahead
+- Green to dictate that normal racing can resume.
 
 ![Color Palette](documentation/color_scheme.png)
 
@@ -40,7 +46,25 @@ Each link contains wireframes for mobile, tablet and desktop.
 ---
 ## Features
 ---
+### Homepage
 
+
+### Footer
+
+
+### Game Page
+
+
+### Card Table
+
+
+### Scorecard and game progress messageboard.
+
+
+### Win / Lose Pages
+
+
+### 404 Page
 ---
 ## Technologies Used
 ---
@@ -66,10 +90,27 @@ Each link contains wireframes for mobile, tablet and desktop.
 ### Validator Testing
 #### HTML
 HTML Markup Validator results:
+- [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fahendley84.github.io%2FFormula-1-Card-Battles%2Findex.html)
+- [game.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fahendley84.github.io%2FFormula-1-Card-Battles%2Fgame.html)
+- [player_win.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fahendley84.github.io%2FFormula-1-Card-Battles%2Fplayer_win.html)
+- [computer_win.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fahendley84.github.io%2FFormula-1-Card-Battles%2Fcomputer_win.html)
+- [404.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fahendley84.github.io%2FFormula-1-Card-Battles%2F404.html)
+
 
 #### CSS
+- [CSS Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fahendley84.github.io%2FFormula-1-Card-Battles%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+
+#### JavaScript
+
+
 
 ### Browser Compatibility
+The site has been tested on the following browsers (latest builds as of 18/08/2023):
+- Google Chrome version Version 116.0.5845.96 (Official Build) (64-bit)
+- Mozilla Firefox Version 116.0.3 (64-bit)
+- Microsoft Edge Version 115.0.1901.203 (Official build) (64-bit)
+- Apple Safari (Latest build on iOS 16.6)
 
 ### Manual Testing and Results
 
