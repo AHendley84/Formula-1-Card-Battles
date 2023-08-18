@@ -46,25 +46,35 @@ Each link contains wireframes for mobile, tablet and desktop.
 ---
 ## Features
 ---
-### Homepage
+### Index/Home Page
+The Index/Home Page is the introduction to the game that provides an explanation on how to play, how the cards are dealt and what you need to win the game.
 
-
+![Index/Home page image](documentation/features/index_page.png)
 ### Footer
+The footer is present on each page and provides links to my social media profiles.
 
-
+![Footer image](documentation/features/footer.png)
 ### Game Page
+The game page is where all the elements come together for the game to be played out.
 
-
+![Game page image](documentation/features/game_page.png)
 ### Card Table
+The card table comprises of the active card for the player and the computer and also contains the scorecard and game progress message board.
 
+![Card table image](documentation/features/card_table.png)
+### Scorecard and game progress message board.
+The score card displays the number of card held by the player and the computer. The message board displays an initital message to confirm the game has started and will then display who won the previous round or if it was a tie.
 
-### Scorecard and game progress messageboard.
+![Score card and message board image](documentation/features/scoreboard_messageboard.png)
+### Player / Computer Win Pages
+Two individual pages to tell the player if they have won or if the computer has one. There is a button on each page to take you back into the game to play another round!
 
-
-### Win / Lose Pages
-
-
+![Player win page image](documentation/features/player_win.png)
+![Computer win page image](documentation/features/computer_win.png)
 ### 404 Page
+A custom 404 page has been created and assigned via GitHub to load whenever a non-existent page is requested.
+
+![404 page image](documentation/features/404.png)
 ---
 ## Technologies Used
 ---
@@ -102,7 +112,7 @@ HTML Markup Validator results:
 
 
 #### JavaScript
-
+- The JavaScript used in this project has been tested on both [JSLint](https://www.jslint.com/) and [JSHint](https://jshint.com/) with no concerns.
 
 
 ### Browser Compatibility
@@ -113,6 +123,11 @@ The site has been tested on the following browsers (latest builds as of 18/08/20
 - Apple Safari (Latest build on iOS 16.6)
 
 ### Manual Testing and Results
+Here is a table of the manual testing done on the site to determine if all features work as described and designed:
+
+|Feature Tested|Required Action|Expected Outcome|Result|
+|---|---|---|---|
+
 
 ### User Story Testing
 
