@@ -18,6 +18,7 @@ For my second project I am creating a Top Trumps style game using the 2023 Formu
 - Returning Visitor
 
     - As a returning visitor, I want to be able to quickly jump back into another game if I've won or lost.
+    - As a returning visitor, I want to be notified if I have tried to access a page that does not exist.
 
 - Website Administrator
 
@@ -130,8 +131,11 @@ Here is a table of the manual testing done on the site to determine if all featu
 |Social media links (all pages)|Click the Facebook, Instagram and LinkedIn icons in the footer|Links should direct to social media channels in a new window|Social media channels load successfully|
 |Play Game button(index page)|Click the green button labelled 'Play Game'|This should load the game.html page and the game starts|Game.html loads and the game starts|
 |Player option inputs highlight on mouse over (game page)|Place the cursor over one of the 5 stats for the player to choose from|The 5 stats in yellow background highlights in red when the pointer moves over them|Background changes colour on placing the cursor on them|
-|Player and Computer card count changes (game page)|Select and click on one of the player stats|If Player wins the round, card increases by one and Computer's decreases by 1 and vice versa. If stat selected is same between both the scores remain the same|Card count increases and decreases as expected|
-|Message board (game page)||||
+|Player and Computer card count changes (game page)|Select and click on one of the player cards stats|If Player wins the round, card increases by one and Computer's decreases by 1 and vice versa. If stat selected is same between both the scores remain the same|Card count increases and decreases as expected|
+|Message board (game page)|Select and click on one of the player cards stats|Upon selecting a stat the message board will change to advise if the round was won by the player, computer or was a tie|Message borad correctly displays win, lose or tie message|
+|Game successfully completes (game page)|Play the game to completion|The Player or the Computer hold all 20 cards. If the palyer has all 20 the player_win.html page is displayed. If the Computer holds all cards then the computer_win.html page is displayed|Both pages display accordingly|
+|Play Again button (player_win and computer_win pages)|Click the 'Play Again' button|Player is taken back to the game page and a new game begins|Page displays accordingly in both instances|
+|Custom 404 error page (404 page)|Remove a letter from one of the pages to point towards an item that does not exist|As the item does not exist the custom 404 Error page should load with a button to take you back to the game|Page loads correctly and redirection button works|
 
 ### User Story Testing
 
@@ -140,46 +144,11 @@ Here is a table of the manual testing done on the site to determine if all featu
 ### Resposiveness
 
 ### Bugs
-- Bug 1 - Nationality on the active computer card was displaying a number
-Issue: 
-```
-compNat.innerText = `${computerCardCurrent[0].driverChampionships}`;
-```
-The above line of code was pointing to the number of drivers championships rather than the nationality.
-Fix:
-```
-compNat.innerText = `${computerCardCurrent[0].nationality}`;
-```
-Amending the code to look at the nationality inside the active card object resolved the issue.
-
-- Bug 2 - Uncaught TypeError: Cannot read properties of undefined (reading 'img1')
-Issue: Uncaught TypeError: Cannot read properties of undefined (reading 'img1')
-```
-function assignCurrentCard() {
-    const playerCurrent = Math.floor((Math.random() * playerCards.length));
-    const computerCurrent = Math.floor((Math.random() * computerCards.length));
-
-    playerCardCurrent.push(playerCards.splice(playerCurrent, 1)[0]);
-    computerCardCurrent.push(computerCards.splice(computerCurrent, 1)[0]);
-};
-```
-The above error kept occuring in the console. What was visibile in the game was the drivers name, team name and the drivers would change, however, the drivers image and team image would remain the same as the previous card. I tried multiple times to understand what was casuing the issue but couldn't see from the code what was causing it. I searched via Google for some answers and found generic responses to the error code, but none that would fix the issue. I decided to reach out to the #project-milestone-2 channel for some guidance. The guidance helped me fix and improve my code.
-Fix:
-```
-function assignCurrentCard() {
-    if (playerCards.length > 0) {
-        const playerCurrent = Math.floor((Math.random() * playerCards.length));
-        playerCardCurrent.push(playerCards.splice(playerCurrent, 1)[0]);
-    };
-
-    if (computerCards.length > 0) {
-        const computerCurrent = Math.floor((Math.random() * computerCards.length));
-        computerCardCurrent.push(computerCards.splice(computerCurrent, 1)[0]);
-    };
-    displayImages();
-    displayDriverStats();
-};
-```
+|Bug Number|Expected|Actual|Fix|
+|---|---|---|---|
+|Bug 1|Nationality should display the drivers Nationality|Nationality on the active computer card was displaying a number|The code was pointing to the number of drivers championships rather than the nationality. Amending the code to look at the nationality inside the active card object resolved the issue|
+|Bug 2|The game function should continue until either the computer or the player has all 20 cards|After approximately 10 games the game would stop unexpectedly and the console would display 'Uncaught TypeError: Cannot read properties of undefined (reading 'img1')'|I reached out to the #project-milestone-2 channel for some guidance. After some initial guidance from Joy Zadan I was able to resolve the issue by moving the displayImages and displayDriverStats into the assignCurrentCard function. I was then able to further improve the code with the help of Joy Zadan to a length check of the playerCards and currentCards to ensure they were greater than zero before assigning the next random card available|
+|Bug 3|The message and score boards should remain in their own separate containers|Overlapping text between the message board and the scoreboard|the height of the message board container had been set to 30px. I changed this to the minimum height which resolved the issue|
 ### Unfixed Bugs
 
 ---
@@ -200,3 +169,4 @@ function assignCurrentCard() {
 - Thanks to [Stack Overflow](https://stackoverflow.com/questions/4919076/outline-effect-to-text) for help on applying the text-shadow to the text on the 404, Player Win and Computer Win pages.
 - Credit to [W3 Schools](https://www.w3schools.com/jsref/prop_style_cursor.asp) for the cursor change property guidance.
 - Thanks to [GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) for this handy guide to adding your own custom 404 page.
+- Thank you to [Joy Zadan on Slack](https://code-institute-room.slack.com/archives/C7HD37Q1F/p1691322584027999) for resolving the second bug identified in my JavaScript.
