@@ -142,6 +142,7 @@ Here is a table of the manual testing done on the site to determine if all featu
 ### Lighthouse Test
 
 ### Resposiveness
+The website has been tested on multiple web browsers, including Google Chrome, Microsoft Edge and Mozilla Firefox. Google Chrome Developer Tools have been used to simulate multiple different device screen sizes such as iPhone SE, Pixel 5, iPad Air and iPad Mini. It has been tested physically on an iPhone 12 Pro, 3rd Gen iPad and on desktop screens 2560 x 1440 pixels and 1920 x 1080 pixels.
 
 ### Bugs
 |Bug Number|Expected|Actual|Fix|
