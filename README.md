@@ -140,6 +140,18 @@ Here is a table of the manual testing done on the site to determine if all featu
 ### User Story Testing
 
 ### Lighthouse Test
+|Page|Device|Lighthouse Result|
+|---|---|---|
+|Index|Mobile|![Index Mobile Results](documentation/lighthouse/index_mobile.png)|
+|Index|Desktop|![Index Desktop Results](documentation/lighthouse/index_desktop.png)|
+|Game|Mobile|![Game Mobile Results](documentation/lighthouse/game_mobile.png)|
+|Game|Desktop|![Game Desktop Results](documentation/lighthouse/game_desktop.png)|
+|Player Win|Mobile|![Player Win Mobile Results](documentation/lighthouse/player_win_mobile.png)|
+|Player Win|Desktop|![Player Win Desktop Results](documentation/lighthouse/player_win_desktop.png)|
+|Computer Win|Mobile|![Computer Win Mobile Results](documentation/lighthouse/computer_win_mobile.png)|
+|Computer Win|Desktop|![Computer Win Desktop Results](documentation/lighthouse/computer_win_desktop.png)|
+|404|Mobile|![404 Mobile Results](documentation/lighthouse/404_mobile.png)|
+|404|Desktop|![404 Desktop Results](documentation/lighthouse/404_desktop.png)|
 
 ### Resposiveness
 The website has been tested on multiple web browsers, including Google Chrome, Microsoft Edge and Mozilla Firefox. Google Chrome Developer Tools have been used to simulate multiple different device screen sizes such as iPhone SE, Pixel 5, iPad Air and iPad Mini. It has been tested physically on an iPhone 12 Pro, 3rd Gen iPad and on desktop screens 2560 x 1440 pixels and 1920 x 1080 pixels.
