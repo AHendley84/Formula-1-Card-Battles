@@ -138,6 +138,17 @@ Here is a table of the manual testing done on the site to determine if all featu
 |Custom 404 error page (404 page)|Remove a letter from one of the pages to point towards an item that does not exist|As the item does not exist the custom 404 Error page should load with a button to take you back to the game|Page loads correctly and redirection button works|
 
 ### User Story Testing
+|User Story|Screenshot|
+|---|---|
+|**First Time Visitor**|
+|As a first time visitor,  I want to get to understand the main purpose of the site.|![Index page](documentation/features/index_page.png)|
+|As a first time visitor,  I want to receive feedback on how I'm progressing in the game.|![Message board including scoreboard](documentation/features/scoreboard_messageboard.png)|
+|As a first time visitor,  I want to know if I've won or lost the game.|![Player Win page](documentation/features/player_win.png)![Computer Win page](documentation/features/computer_win.png)|
+|**Returning Visitor**|
+|As a returning visitor, I want to be able to quickly jump back into another game if I've won or lost.|![Play again button](documentation/features/play_again.png)|
+|As a returning visitor, I want to be notified if I have tried to access a page that does not exist.|![404 error page](documentation/features/404.png)|
+|**Website Administrator**|
+|As a website administrator, I want to provide links to my social media channels.|![Links to social media](documentation/features/footer.png)|
 
 ### Lighthouse Test
 |Page|Device|Lighthouse Result|
@@ -226,4 +237,4 @@ You can fork this repository by using the following steps:
 - Thanks to [Stack Overflow](https://stackoverflow.com/questions/4919076/outline-effect-to-text) for help on applying the text-shadow to the text on the 404, Player Win and Computer Win pages.
 - Credit to [W3 Schools](https://www.w3schools.com/jsref/prop_style_cursor.asp) for the cursor change property guidance.
 - Thanks to [GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) for this handy guide to adding your own custom 404 page.
-- Thank you to [Joy Zadan on Slack](https://code-institute-room.slack.com/archives/C7HD37Q1F/p1691322584027999) for resolving the second bug identified in my JavaScript.
+- Thank you to [Joy Zadan on Slack](https://code-institute-room.slack.com/archives/C7HD37Q1F/p1691322584027999) for helping me to resolve the second bug identified in my JavaScript code.
