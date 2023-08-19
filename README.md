@@ -127,7 +127,11 @@ Here is a table of the manual testing done on the site to determine if all featu
 
 |Feature Tested|Required Action|Expected Outcome|Result|
 |---|---|---|---|
-
+|Social media links (all pages)|Click the Facebook, Instagram and LinkedIn icons in the footer|Links should direct to social media channels in a new window|Social media channels load successfully|
+|Play Game button(index page)|Click the green button labelled 'Play Game'|This should load the game.html page and the game starts|Game.html loads and the game starts|
+|Player option inputs highlight on mouse over (game page)|Place the cursor over one of the 5 stats for the player to choose from|The 5 stats in yellow background highlights in red when the pointer moves over them|Background changes colour on placing the cursor on them|
+|Player and Computer card count changes (game page)|Select and click on one of the player stats|If Player wins the round, card increases by one and Computer's decreases by 1 and vice versa. If stat selected is same between both the scores remain the same|Card count increases and decreases as expected|
+|Message board (game page)||||
 
 ### User Story Testing
 
