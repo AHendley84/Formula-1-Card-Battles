@@ -39,10 +39,10 @@ Google Fonts was used to import the 'Russo One' and the 'Exo 2' fonts into the s
 
 ### Wireframes
 Each link contains wireframes for mobile, tablet and desktop.
-- [Home/Index](documentation/wireframes/Index.png)
-- [Game Page](documentation/wireframes/Game.png)
-- [Player Win Page](documentation/wireframes/Player%20Win.png)
-- [Computer Win Page](documentation/wireframes/Computer%20Win.png)
+- [Home/Index](documentation/wireframes/index.png)
+- [Game Page](documentation/wireframes/game.png)
+- [Player Win Page](documentation/wireframes/player_win.png)
+- [Computer Win Page](documentation/wireframes/computer_win.png)
 - [404 Page Page](documentation/wireframes/404.png)
 ---
 ## Features
@@ -149,7 +149,9 @@ Here is a table of the manual testing done on the site to determine if all featu
 |Bug 1|Nationality should display the drivers Nationality|Nationality on the active computer card was displaying a number|The code was pointing to the number of drivers championships rather than the nationality. Amending the code to look at the nationality inside the active card object resolved the issue|
 |Bug 2|The game function should continue until either the computer or the player has all 20 cards|After approximately 10 games the game would stop unexpectedly and the console would display 'Uncaught TypeError: Cannot read properties of undefined (reading 'img1')'|I reached out to the #project-milestone-2 channel for some guidance. After some initial guidance from Joy Zadan I was able to resolve the issue by moving the displayImages and displayDriverStats into the assignCurrentCard function. I was then able to further improve the code with the help of Joy Zadan to a length check of the playerCards and currentCards to ensure they were greater than zero before assigning the next random card available|
 |Bug 3|The message and score boards should remain in their own separate containers|Overlapping text between the message board and the scoreboard|the height of the message board container had been set to 30px. I changed this to the minimum height which resolved the issue|
+
 ### Unfixed Bugs
+As of the 19/08/2023 there are no known bugs present.
 
 ---
 ## Deployment
