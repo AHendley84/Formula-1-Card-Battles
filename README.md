@@ -5,6 +5,8 @@ For my second project I am creating a Top Trumps style game using the 2023 Formu
 
 ![Visual Representation](documentation/responsive_representation.png)
 
+[Live version of the site](https://ahendley84.github.io/Formula-1-Card-Battles/)
+
 ---
 ## User Experience (UX) & Design
 ---
@@ -51,31 +53,38 @@ Each link contains wireframes for mobile, tablet and desktop.
 The Index/Home Page is the introduction to the game that provides an explanation on how to play, how the cards are dealt and what you need to win the game.
 
 ![Index/Home page image](documentation/features/index_page.png)
+
 ### Footer
 The footer is present on each page and provides links to my social media profiles.
 
 ![Footer image](documentation/features/footer.png)
+
 ### Game Page
 The game page is where all the elements come together for the game to be played out.
 
 ![Game page image](documentation/features/game_page.png)
+
 ### Card Table
 The card table comprises of the active card for the player and the computer and also contains the scorecard and game progress message board.
 
 ![Card table image](documentation/features/card_table.png)
+
 ### Scorecard and game progress message board.
 The score card displays the number of card held by the player and the computer. The message board displays an initital message to confirm the game has started and will then display who won the previous round or if it was a tie.
 
 ![Score card and message board image](documentation/features/scoreboard_messageboard.png)
+
 ### Player / Computer Win Pages
 Two individual pages to tell the player if they have won or if the computer has one. There is a button on each page to take you back into the game to play another round!
 
 ![Player win page image](documentation/features/player_win.png)
 ![Computer win page image](documentation/features/computer_win.png)
+
 ### 404 Page
 A custom 404 page has been created and assigned via GitHub to load whenever a non-existent page is requested.
 
 ![404 page image](documentation/features/404.png)
+
 ---
 ## Technologies Used
 ---
